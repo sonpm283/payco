@@ -1,0 +1,76 @@
+@use "./sass/" as *;
+
+@font-face {
+    font-family: 'notosanscjkkr-regular';
+    src: url('../fonts/notosanscjkkr-regular-webfont.woff') format('woff2'),
+         url('../fonts/notosanscjkkr-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'NotoSansKR-Medium-Alphabetic';
+    src: url('NotoSansKR-Medium-Alphabetic.eot');
+    src: url('NotoSansKR-Medium-Alphabetic.eot?#iefix') format('embedded-opentype'),
+        url('NotoSansKR-Medium-Alphabetic.woff2') format('woff2'),
+        url('NotoSansKR-Medium-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Regular';
+    src: url('../fonts/NotoSansKR-Regular.eot');
+    src: url('../font/NotoSansKR-Regular-Alphabetic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include tablet {
+        font-size: 60%;
+    }
+
+    @include mobile {
+        font-size: 58%;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1;
+    color: $text-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1130px;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
