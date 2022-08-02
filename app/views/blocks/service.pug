@@ -1,0 +1,46 @@
+-
+    const dataServices = [
+        {
+             className: 'service',
+             link: '#',
+             src: './images/service/service_icon_1.png',
+             title: 'NHN Cloud',
+             desc: '복잡한 인프라와 플랫폼 개발, 운영 업무는 NHN Cloud에 맡기고 콘텐츠 개발에만 집중하세요.',
+             linkButton: '자세히 보기'
+        },
+        {
+             className: 'service',
+             link: '#',
+             src: './images/service/service_icon_2.png',
+             title: 'PAYCO 결제 서비스',
+             desc: '매출은 늘리고 관리는 간편하게! 온라인, 오프라인 다양한 맞춤형 결제 방식을 제공합니다.',
+             linkButton: '자세히 보기'
+        },
+        {
+             className: 'service',
+             link: '#',
+             src: './images/service/service_icon_3.png',
+             title: 'PAYCO 인증서',
+             desc: '인증은 간편하게, 보안은 완벽하게! PAYCO 인증서에서 만나보세요.',
+             linkButton: '자세히 보기'
+        },
+    ]
+section.service
+    div.container
+        div.service__list
+            each item in dataServices
+                -
+                    const className= item.className
+                    const link= item.link
+                    const src= item.src
+                    const title= item.title
+                    const desc= item.desc
+                    const linkButton= item.linkButton
+                +card({
+                    className,
+                    link,
+                    src,
+                    title,
+                    desc,
+                    linkButton
+                })

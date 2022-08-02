@@ -1,0 +1,14 @@
+// flex
+@mixin flex($alignItem, $justifyContent, $direction: "row") {
+    display: flex;
+    align-items: $alignItem;
+    justify-content: $justifyContent;
+    flex-direction: $direction;
+}
+
+@mixin btn($color, $bgColor, $radius) {
+    display: inline-block;
+    color: $color;
+    background-color: $bgColor;
+    border-radius: $radius;
+}

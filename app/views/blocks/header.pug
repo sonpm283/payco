@@ -1,0 +1,41 @@
+-
+    const navLinks = [
+        {
+            link: '#',
+            name: '소개'
+        },
+        {
+            link: '#',
+            name: '개발가이드'
+        },
+        {
+            link: '#',
+            name: '애플리케이션'
+        },
+        {
+            link: '#',
+            name: '고객지원'
+        },
+    ]
+header.header
+    div.container
+        div.topbar
+            p.topbar__title
+               span [공지]
+               | [SDK] AOS SDK v1.5.4, iOS SDK v1.4.3 업데이트 내역 안내
+            div.topbar__contact
+                a(href="#").topbar__email payco@payco.com
+                span.topbar__text 로그아웃
+        nav.nav
+            a(href="#").nav__logo
+                span PAYCO
+                | 개발자센터
+            ul.nav__menu
+                each item in navLinks
+                    -
+                        const link= item.link
+                        const name = item.name
+                    +listItem({
+                        link,
+                        name
+                    })

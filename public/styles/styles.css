@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/gotham-rounded");
+@import url("http://fonts.cdnfonts.com/css/gotham-book");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  text-align: center; }
+
+.service__title {
+  font-weight: 500;
+  font-size: 2.2rem;
+  margin: 3rem 0 2.3rem; }
+
+.service__desc {
+  color: #666;
+  line-height: 1.5; }
+
+.service__link {
+  display: inline-block;
+  color: #fa2828;
+  margin-top: 4rem;
+  position: relative;
+  font-weight: 500; }
+  .service__link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background-image: url("../images/icon/arrow-right-icon.png");
+    background-repeat: no-repeat;
+    width: 7px;
+    height: 11px;
+    right: -15px;
+    top: 3px; }
+
+html {
+  font-size: 62.5%; }
+
+.wrapper {
+  max-width: 2560px;
+  margin: 0 auto; }
+
+.container {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+body {
+  line-height: 1;
+  font-size: 1.6rem;
+  font-family: "Noto Sans KR", "sans-serif";
+  font-weight: 400;
+  color: #2d2d2d; }
+
+button {
+  border: none;
+  outline: none; }
+
+button:hover,
+button:focus {
+  outline: none; }
+
+.header {
+  margin-top: 1.5rem; }
+  .header .topbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: "row";
+    flex-direction: "row"; }
+    .header .topbar__title {
+      font-size: 1.3rem;
+      color: #424242; }
+      .header .topbar__title span {
+        margin-right: .6rem; }
+    .header .topbar__contact {
+      font-size: 1.4rem;
+      color: #2d2d2d; }
+    .header .topbar__email {
+      position: relative;
+      bottom: 1px;
+      left: 2px;
+      padding-right: 2.8rem;
+      color: #2d2d2d; }
+      .header .topbar__email::before {
+        content: "";
+        position: absolute;
+        background-color: #2d2d2d;
+        width: 12.3rem;
+        height: 1px;
+        bottom: 0; }
+      .header .topbar__email::after {
+        content: "";
+        position: absolute;
+        background: url("../images/icon/arrow-down.png") no-repeat;
+        width: 7px;
+        height: 5px;
+        right: 16px;
+        top: 9px; }
+    .header .topbar__text {
+      position: relative;
+      left: 2px; }
+      .header .topbar__text::after {
+        content: "";
+        position: absolute;
+        height: 12px;
+        background-color: #949494;
+        top: 4px;
+        left: -7px;
+        width: 1px; }
+  .header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: "row";
+    flex-direction: "row";
+    margin-top: 4.3rem; }
+    .header .nav__logo {
+      position: relative;
+      left: -1px;
+      font-size: 2rem;
+      color: #2d2d2d;
+      font-weight: 700;
+      letter-spacing: -1px;
+      position: relative;
+      bottom: 2px; }
+    .header .nav span {
+      position: relative;
+      top: 2px;
+      font-family: "Gotham Rounded", sans-serif;
+      font-size: 2.5rem;
+      color: #fa2828;
+      margin-right: 5px; }
+    .header .nav__menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+      flex-direction: "row"; }
+    .header .nav__item:not(:last-child) {
+      margin-right: 2.6rem; }
+    .header .nav__link {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2d2d2d;
+      -webkit-transition: color .25s ease;
+      transition: color .25s ease;
+      letter-spacing: -0.7px;
+      position: relative; }
+      .header .nav__link::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        bottom: -4px;
+        left: 0;
+        background-color: #2d2d2d;
+        -webkit-transition: width .25s linear;
+        transition: width .25s linear; }
+      .header .nav__link:hover::after {
+        width: 100%; }
+
+.banner {
+  margin-top: 3.9rem; }
+  .banner__inner {
+    position: relative; }
+  .banner__caption {
+    margin-left: 1rem;
+    margin-top: 5.7rem;
+    padding-bottom: 14rem; }
+  .banner__title {
+    font-size: 4.6rem;
+    letter-spacing: -2px;
+    margin-left: -4px; }
+    .banner__title span {
+      font-family: "Gotham Book", sans-serif;
+      letter-spacing: -5px;
+      font-size: 5rem;
+      margin-right: 7px;
+      font-weight: 500; }
+  .banner__subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 2.9rem 0 6.2rem;
+    color: #666;
+    font-size: 1.8rem;
+    gap: 10px;
+    letter-spacing: -0.7px; }
+  .banner__btn {
+    width: 19rem;
+    height: 6.4rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    line-height: 6.4rem;
+    text-align: center;
+    padding-bottom: 2px;
+    margin-left: 2px;
+    background-color: #2d2d2d; }
+    .banner__btn span {
+      position: relative;
+      bottom: 2px; }
+  .banner__img {
+    position: absolute;
+    right: -3.1rem;
+    top: -1px; }
+    .banner__img img {
+      height: 52rem;
+      width: 67rem; }
+  .banner .swiper {
+    width: 45%;
+    margin: unset; }
+    .banner .swiper .swiper-pagination {
+      left: 9px;
+      text-align: unset; }
+      .banner .swiper .swiper-pagination .swiper-pagination-bullet {
+        width: 4rem;
+        border-radius: unset;
+        background: #666;
+        height: 4px; }
+
+.newsletter {
+  background: url("../images/newsletters/newsletter-img.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 34rem;
+  margin-top: 5rem;
+  text-align: center; }
+  .newsletter__title {
+    color: #fff;
+    font-family: "Noto Sans KR", "sans-serif";
+    font-weight: 500;
+    font-size: 2.8rem;
+    padding-top: 7.7rem;
+    letter-spacing: -0.8px; }
+    .newsletter__title span {
+      font-family: "Gotham Book", sans-serif;
+      font-size: 3rem;
+      letter-spacing: -1.2px; }
+    .newsletter__title p {
+      margin-top: 1.6rem;
+      letter-spacing: -1px;
+      margin-left: 5px; }
+  .newsletter__btn {
+    width: 22.2rem;
+    height: 7rem;
+    border: 2px solid #fff;
+    background-color: #fa2828;
+    line-height: 7rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    margin-top: 3.8rem;
+    margin-left: 1px;
+    letter-spacing: -1px; }
+    .newsletter__btn span {
+      position: relative;
+      bottom: 2px;
+      left: 1px; }
+
+.service {
+  margin: 7.9rem 0 8.1rem; }
+  .service__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: "row";
+    flex-direction: "row";
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .service__item {
+    width: calc(33.33% - (4.8rem/3));
+    padding: 3.2rem 3.2rem 4.6rem 3.8rem;
+    border: 1px solid #efefef;
+    height: 36.6rem; }

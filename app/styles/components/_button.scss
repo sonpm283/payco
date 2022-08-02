@@ -1,0 +1,4 @@
+.btn {
+    @include btn($white-color, transparent, 4px);
+    text-align: center;
+}

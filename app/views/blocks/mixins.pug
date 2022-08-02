@@ -1,0 +1,16 @@
+mixin listItem(data)
+    li.nav__item
+        a(href=data.link).nav__link= data.name
+
+mixin btn(data)
+    a(href=data.link class= data.class)
+        span=data.name
+
+mixin card(data)
+    article(class= `${data.className}__item`)
+        figure(class= `${data.className}__icon`)
+            img(src=data.src, alt=`${data.className}-icon`)
+        div(class= `${data.className}__content`)
+            h2(class= `${data.className}__title`)= data.title
+            p(class= `${data.className}__desc`)= data.desc
+            a(href= data.link, class= `${data.className}__link`)= data.linkButton

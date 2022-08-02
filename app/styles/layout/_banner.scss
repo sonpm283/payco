@@ -1,0 +1,71 @@
+.banner {
+    margin-top: 3.9rem;
+    &__inner {
+
+        position: relative;
+    }
+    &__caption {
+        margin-left: 1rem;
+        margin-top: 5.7rem;
+        padding-bottom: 14rem;
+    }
+    &__title {
+        font-size: 4.6rem;
+        letter-spacing: -2px;
+        margin-left: -4px;
+        span {
+            font-family: $gotham-book-font;
+            letter-spacing: -5px;
+            font-size: 5rem;
+            margin-right: 7px;
+            font-weight: 500;
+        }
+    }
+    &__subtitle {
+        @include flex(unset, unset, column);
+        margin: 2.9rem 0 6.2rem;
+        color: $text-color;
+        font-size: 1.8rem;
+        gap: 10px;
+        letter-spacing: -0.7px;
+    }
+    &__btn {
+        width: 19rem;
+        height: 6.4rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: -0.8px;
+        line-height: 6.4rem;
+        text-align: center;
+        padding-bottom: 2px;
+        margin-left: 2px;
+        background-color: $black-color;
+        span {
+            position: relative;
+            bottom: 2px;
+        }
+    }
+    &__img{
+        position: absolute;
+        right: -3.1rem;
+        top: -1px;
+        img {
+            height: 52rem;
+            width: 67rem;
+        }
+    }
+    .swiper {
+        width: 45%;
+        margin: unset;
+        .swiper-pagination {
+            left: 9px;
+            text-align: unset;
+            .swiper-pagination-bullet  {
+                width: 4rem;
+                border-radius: unset;
+                background: $text-color;
+                height: 4px;
+            }
+        }
+    }
+}

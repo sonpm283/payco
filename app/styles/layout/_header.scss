@@ -1,0 +1,105 @@
+.header {
+    margin-top: 1.5rem;
+    .topbar {
+        @include flex(center, space-between);
+        &__title {
+            font-size: 1.3rem;
+            color: $gray-dark-color;
+            span {
+                margin-right: .6rem;
+            }
+        }
+        &__contact {
+            font-size: 1.4rem;
+            color: $black-color;
+        }
+        &__email {
+            position: relative;
+            bottom: 1px;
+            left: 2px;
+            padding-right: 2.8rem;
+            color: $black-color;
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: $black-color;
+                width: 12.3rem;
+                height: 1px;
+                bottom: 0;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                background: url("../images/icon/arrow-down.png") no-repeat;
+                width: 7px;
+                height: 5px;
+                right: 16px;
+                top: 9px;
+            }
+        }
+        &__text {
+            position: relative;
+            left: 2px;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 12px;
+                background-color: $gray-light-color;
+                top: 4px;
+                left: -7px;
+                width: 1px;
+            }
+        }
+    }
+    .nav {
+        @include flex(start, space-between);
+        margin-top: 4.3rem;
+        &__logo {
+            position: relative;
+            left: -1px;
+            font-size: 2rem;
+            color: $black-color;
+            font-weight: 700;
+            letter-spacing: -1px;
+            position: relative;
+            bottom: 2px;
+        }
+        span {
+            position: relative;
+            top: 2px;
+            font-family: $gotham-rouded-font;
+            font-size: 2.5rem;
+            color: $primary-color;
+            margin-right: 5px;
+        }
+        &__menu {
+            @include flex(center, center);
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-right: 2.6rem;
+            }
+        }
+        &__link {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: $black-color;
+            transition: color .25s ease;
+            letter-spacing: -0.7px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 0%;
+                bottom: -4px;
+                left: 0;
+                background-color: $black-color;
+                transition: width .25s linear;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}

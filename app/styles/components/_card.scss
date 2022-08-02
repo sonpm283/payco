@@ -1,0 +1,29 @@
+.service {
+    &__title {
+        font-weight: 500;
+        font-size: 2.2rem;
+        margin: 3rem 0 2.3rem;
+    }
+    &__desc {
+        color: $text-color;
+        line-height: 1.5;
+    }
+    &__link {
+        display: inline-block;
+        color: $primary-color;
+        margin-top: 4rem;
+        position: relative;
+        font-weight: 500;
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            background-image: url('../images/icon/arrow-right-icon.png');
+            background-repeat: no-repeat;
+            width: 7px;
+            height: 11px;
+            right: -15px;
+            top: 3px;
+        }
+    }
+}

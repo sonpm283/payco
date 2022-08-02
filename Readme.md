@@ -1,0 +1,6 @@
+- Required NodeJS installed
+- `npm install` then run `npm run dev`
+- let spacing
+- spcace mystic of text
+- box-modal
+- position relative
