@@ -74,6 +74,9 @@
         }
         &__menu {
             @include flex(center, center);
+            @include tablet() {
+                display: none;
+            }
         }
         &__item {
             &:not(:last-child) {

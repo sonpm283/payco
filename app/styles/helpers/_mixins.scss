@@ -12,3 +12,47 @@
     background-color: $bgColor;
     border-radius: $radius;
 }
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+
+@mixin positionCenter($positon) {
+    content: "";
+    position: absolute;
+    @if $positon == 'left' {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @if $positon == 'top' {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @if $positon == 'both' {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+@mixin mobie {
+    @media only screen and (max-width: $mobile-width) {
+        @content
+    }
+}
+
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet-width) {
+        @content
+    }
+}
+
+
+
+

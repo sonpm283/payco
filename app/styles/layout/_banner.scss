@@ -15,25 +15,31 @@
         margin-left: -4px;
         span {
             font-family: $gotham-book-font;
-            letter-spacing: -2px;
             font-size: 5rem;
             margin-right: 7px;
             font-weight: 500;
             display: inline-block;
             margin-right: 0;
+            &:first-child {
+                margin-left: 0.5px;
+            }
             > span {
                 overflow: hidden;
                 vertical-align: bottom;
+                margin-left: -4px;
+                &:nth-child(5){
+                    margin-right: 6px;
+                }
             }
             > span:nth-child(odd) {
                 > span:nth-child(odd) {
-                    animation: showTextFromBottom cubic-bezier(0, 0.8, 0.2, 1) 1s backwards;
+                    animation: showTextFromBottom cubic-bezier(0, 0.8, 0.2, 1) 0.75s backwards;
                 }
             }
 
             > span:nth-child(even) {
-                  > span:nth-child(odd) {
-                    animation: showTextFromTop cubic-bezier(0, 0.8, 0.2, 1) 1s backwards;
+                > span:nth-child(odd) {
+                    animation: showTextFromTop cubic-bezier(0, 0.8, 0.2, 1) 0.75s backwards;
                 }
             }
         }
@@ -66,6 +72,9 @@
         position: absolute;
         right: -3.1rem;
         top: -1px;
+        @include tablet() {
+            display: none;
+        }
         img {
             height: 52rem;
             width: 67rem;
@@ -73,6 +82,9 @@
     }
     .swiper {
         width: 45%;
+        @include tablet() {
+            width: 100%;
+        }
         margin: unset;
         .swiper-pagination {
             left: 8px;
